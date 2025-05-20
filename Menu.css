@@ -1,0 +1,420 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    overflow-x: hidden;
+    background-color: #f9f9f9;
+    scroll-behavior: smooth;
+}
+/* Navigation Bar */
+
+#navigation{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    width:100%;
+    height: 90px;
+    /* background-color: black; */
+    backdrop-filter: blur(8px); 
+    background-color: rgba(255, 200, 0, 0.3); 
+    z-index: 1;
+}
+
+#navigation .menu{
+    display: none;
+}
+
+#sidebar {
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0; 
+    backdrop-filter: blur(10px);
+    background-color: rgb(255, 255, 255, 0.2);
+    z-index: 999; 
+}
+
+#sidebar .links{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 250px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px 0;
+}
+
+
+#navigation .links{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    line-height: 90px;
+
+}
+
+#navigation a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto',sans-serif;
+    font-size: larger;
+    font-weight: bold;
+    font-style: normal;
+    padding:0px 30px 0px 30px;
+    transition: 0.3s ease-in-out;
+}
+
+#navigation a:hover{
+    color: black;
+}
+
+#sidebar a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto',sans-serif;
+    font-size: larger;
+    font-weight: bold;
+    font-style: normal;
+    width: 100%;
+    padding: 10px 0 20px 30px;
+    
+}
+
+#sidebar a:hover{
+    background-color: #f0f0f0;
+   
+}
+
+#navigation #logo{
+    height: 200px;
+    position: absolute;
+    top: -10px;
+}
+
+/* Section 1 : Menu Background */
+
+.menuBackground{
+    background-image: url(images/pizzamenu/—Pngtree—food\ menu\ fare\ meal\ background_869492.jpg);
+    height: 40vh;
+    position: relative;
+    
+}
+
+.menuBackground .menuTitle{
+    font-size: 70px;
+    font-family: 'Cardo',Times, serif; 
+    color:white;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    
+}
+
+/* Section 2 : Mini Nav Bar */
+.secondNav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondNav .wrapperNav{
+    display: flex;
+    justify-content:space-between;
+    height: 60px;
+    gap: 5px;
+    
+}
+
+.secondNav .wrapperNav a{
+    position: relative;
+    font-family: 'Cardo',Times, serif; 
+    font-size: 20px;
+    text-decoration: none;
+    width: 150px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    transition: .5s;
+    padding-bottom: -50px;
+}
+
+.secondNav .wrapperNav a span{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid orange;
+    border-radius: 15px;
+    transform: scale(0) translateY(50px);
+    transition: .5s;
+}
+
+.secondNav .wrapperNav a:not(.selectedNav):hover span{
+    transform: scale(1) translateY(0);
+}
+
+
+.secondNav .wrapperNav a.selectedNav{
+    border-bottom: 5px solid orange;
+    border-radius: 15px;
+    color: orange;
+}
+
+
+/* Section 3 : Pizza Section */
+.title{
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:100px;
+    margin: 30px 50px;
+}
+
+.title .sideLine{
+    width:100%;
+    border-top: 1px solid #afafaf;
+}
+
+.area{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 50px;
+    max-width: 1500px;
+    margin: 0 20%;
+    
+}
+
+.area .option{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f6f6;
+    padding: 10px;
+    box-shadow: 12px 12px 12px rgba(0,0,0,0.1);
+    
+}
+
+
+.area .option img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.area .option span{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+    padding: 5px;
+    font-weight: 500;
+}
+
+.area .option .topic{
+    height: 50px;
+}
+
+.area .option .price{
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: rgb(250, 212, 140);
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.area .option .price:hover{
+   background-color: orange;
+}
+
+.pizzaSection, .burgerSection ,.drinksSection ,.dessertsSection{
+    margin-bottom: 100px;
+}
+/* Footer */
+.wrapper{
+    background-color: rgb(190, 122, 27); 
+}
+
+.wrapper .footerArea{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    padding: 30px 0;
+    flex-wrap: wrap;
+    gap:30px;
+}
+
+.wrapper .footerArea .linksFooter,
+.wrapper .footerArea .address,
+.wrapper .footerArea .callUs,
+.wrapper .footerArea .openingHours{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  
+}
+
+.wrapper .footerArea .linksFooter{
+    display: flex;
+    flex-direction: column; 
+    
+}
+
+.wrapper .footerArea .linksFooter .linksList{
+    display: flex;
+    flex-direction: column;
+    width: 80px; 
+}
+
+.wrapper .footerArea .titleFooter{
+    font-family: 'Cardo',Times, serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 30px;
+}
+
+.wrapper .footerArea .details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;  
+    transition: 0.3s ease-in-out;
+}
+
+.wrapper .footerArea .linksList a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    padding: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.wrapper .footerArea .linksList a:hover{
+    font-weight: bold;
+}
+
+.wrapper .copyRight{
+    font-family: 'Poppins',sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 5px ;
+}
+
+
+@media(max-width:1000px){
+    /* Section 3 : Pizza Section */
+
+    .area{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 30px;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    /* Section 3 : Pizza Section */
+    .title{
+        font-size: 50px;
+        gap:50px;
+    }
+
+} 
+
+@media(max-width:800px){
+    /* Navigation Bar */
+
+    .hideOnMobile{
+        display:none;
+    }
+    #navigation .menu{
+        display: block;
+    }
+        
+    /* Section 2 : Mini Nav Bar */
+
+    .secondNav .wrapperNav a{
+        width: 100px;
+    }
+
+    
+
+} 
+
+@media(max-width:700px){
+    /* Section 3 : Pizza Section */
+
+    .area{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        max-width: 480px;
+        margin: 0 auto;
+    }
+
+} 
+
+
+@media(max-width:500px){
+    /* Navigation Bar */
+    #navigation{
+        width:100%;
+        height: 70px;   
+    }
+
+    #navigation #logo{
+        height: 150px;
+        top: -10px;
+    }
+
+     /* Section 2 : Mini Nav Bar */
+
+    .secondNav .wrapperNav{
+        gap: 0;
+    }
+
+    .secondNav .wrapperNav a{
+        width: 80px;
+    }
+    
+    /* Section 3 : Pizza Section */
+
+    .area{
+        gap: 20px;
+        max-width: 480px;
+        margin: 0 15px;
+    }
+
+    /* Section 3 : Pizza Section */
+    .title{
+        font-size: 40px;
+        gap:20px;
+        margin-inline: 30px;
+    }
+    
+    /* Section 3 : Pizza Section */
+
+    /* Footer */
+    .wrapper .footerArea{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}

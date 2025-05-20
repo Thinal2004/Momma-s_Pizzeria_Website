@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Momma's Pizzeria</title>
+
+    <link rel="shortcut icon" type="x-icon" href="images/logoAddressBar.png"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bentham&family=Cardo:ital,wght@0,400;0,700;1,400&family=Cutive+Mono&family=Dancing+Script:wght@400..700&family=Instrument+Serif:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="Menu.css">
+</head>
+<body>
+    <header>
+        <div id="sidebar">
+            <div class="links">
+                <a onclick=closeSidebar()><i class="fa-solid fa-xmark"></i></a>
+                <a href="Home.html">Home</a>
+                <a href="#">Menu</a>
+                <a href="Home.html#aboutUs">About Us</a>
+                <a href="Home.html#contactUs">Contact</a>
+            </div>        
+        </div>
+
+        <div id="navigation">
+            <img src="images/logonew.png" alt="logo" id="logo">
+            <div class="links">
+                <a href="Home.html" class="hideOnMobile">Home</a>
+                <a href="#" class="hideOnMobile">Menu</a>
+                <a href="Home.html#aboutUs" class="hideOnMobile">About Us</a>
+                <a href="Home.html#contactUs" class="hideOnMobile">Contact</a>
+                <a class="menu" onclick=showSidebar()><i class="fa-solid fa-bars" ></i></a>
+            </div>        
+        </div>
+    </header>
+
+    <!-- Section 1 : Menu Background -->
+    <section class="menuBackground">
+        <div class="menuTitle">Our Menu</div>
+    </section>
+
+    <!-- Section 2 : Second Navigation -->
+     <section class="secondNav">
+        <div class="wrapperNav">
+            <a href="#pizzaSection" id="pizzaNav">Pizza<span></span></a>
+            <a href="#burgerSection" id="burgerNav">Burgers<span></span></a>
+            <a href="#drinksSection" id="drinksNav">Drinks<span></span></a>
+            <a href="#dessertsSection" id="dessertsNav">Desserts<span></span></a>
+        </div>
+     </section>
+
+    <!-- Section 3 : Pizza Section -->
+     <section class="pizzaSection" id="pizzaSection">
+        <div class="title">
+            <span class="sideLine"></span>
+            <span>PIZZA</span>
+            <span class="sideLine"></span>
+        </div>
+        <div class="area">
+            <div class="option">
+                <img src="images/pizzamenu/doublecheese.jpg" alt="cheese pizza">
+                <span class="topic">Cheesy Loaded</span>
+                <span class="price">Rs. 1,900.00</span>
+            </div>
+            <div class="option">
+                <img src="images/pizzamenu/vegi.jpg" alt="vegi pizza">
+                <span class="topic">Veggie Masala Pizza</span>
+                <span class="price">Rs. 1,900.00</span>
+            </div>
+            <div class="option">
+                <img src="images/pizzamenu/sausage.jpg" alt="sausage pizza">
+                <span class="topic">Sausage Supreme</span>
+                <span class="price">Rs. 2,300.00</span>
+            </div>
+            <div class="option">
+                <img src="images/pizzamenu/pepperoni.jpg" alt="pepperoni pizza">
+                <span class="topic">Pepperoni Delight</span>
+                <span class="price">Rs. 2,300.00</span>
+            </div>
+            <div class="option">
+                <img src="images/pizzamenu/chicken_pizza.jpg" alt="chicken pizza">
+                <span class="topic">BBQ Chicken Pizza</span>
+                <span class="price">Rs. 2,500.00</span>
+            </div>
+            <div class="option">
+                <img src="images/pizzamenu/beef.jpg" alt="beef pizza">
+                <span class="topic">Beef Pepperoni</span>
+                <span class="price">Rs. 2,500.00</span>
+            </div>
+            <div class="option">
+                <img src="images/pizzamenu/mutton_pizza.jpg" alt="mutton pizza">
+                <span class="topic">Mutton Pizza</span>
+                <span class="price">Rs. 2,500.00</span>
+            </div>
+            <div class="option">
+                <img src="images/pizzamenu/prawn_pizza.jpg" alt="hot prawn pizza">
+                <span class="topic">Hot Prawn Pizza</span>
+                <span class="price">Rs. 2,800.00</span>
+            </div>
+            <div class="option">
+                <img src="images/pizzamenu/seafood.jpg" alt="sea food pizza">
+                <span class="topic">Seafood Hawaiian</span>
+                <span class="price">Rs. 3,000.00</span>
+            </div>
+            <div class="option">
+                <img src="images/pizzamenu/supreme.jpg" alt="all in one pizza">
+                <span class="topic">Supreme - All In One</span>
+                <span class="price">Rs. 3,200.00</span>
+            </div>
+        </div>
+     </section>
+
+    <!-- Section 4 : Burgers Section -->
+    <section class="burgerSection" id="burgerSection">
+        <div class="title">
+            <span class="sideLine"></span>
+            <span>Burgers</span>
+            <span class="sideLine"></span>
+        </div>
+        <div class="area">
+            <div class="option">
+                <img src="images/pizzamenu/cheeseburger-sandwich.jpg" alt="cheese burger">
+                <span class="topic">Chicken & Cheese Burger</span>
+                <span class="price">Rs. 800.00</span>
+            </div>
+            <div class="option">
+                <img src="images/pizzamenu/double-cheese-burger.jpg" alt="double chicken cheese burger">
+                <span class="topic">Double Cheese & Chicken</span>
+                <span class="price">Rs. 1,000.00</span>
+            </div>
+            <div class="option">
+                <img src="images/pizzamenu/crispy-chicken.jpg" alt="crispy chicken burger">
+                <span class="topic">Crispy Chicken Burger</span>
+                <span class="price">Rs. 1,200.00</span>
+            </div>
+            <div class="option">
+                <img src="images/pizzamenu/whopper-jnr.jpg" alt="beef burger">
+                <span class="topic">Beef Burger</span>
+                <span class="price">Rs. 1,200.00</span>
+            </div>
+            <div class="option">
+                <img src="images/pizzamenu/big-king-middle-bun.jpeg" alt="double decker">
+                <span class="topic">Double Decker Supreme</span>
+                <span class="price">Rs. 1,600.00</span>
+            </div>
+        </div>
+     </section>
+    <!-- Section 5 : Drinks Section -->
+    <section class="drinksSection" id="drinksSection">
+        <div class="title">
+            <span class="sideLine"></span>
+            <span>Drinks</span>
+            <span class="sideLine"></span>
+        </div>
+        <div class="area">
+            <div class="option">
+                <img src="images/pizzamenu/DC_202402_0521_MediumCoke_ContourGlassv1_1564x1564_nutrition-calculator-tile.avif" alt="coca cola glass">
+                <span class="topic">Coca Cola</span>
+                <span class="price">Rs. 300.00</span>
+            </div>
+            <div class="option">
+                <img src="images/pizzamenu/DC_202212_0721_MediumSprite_Glass_1564x1564-1_nutrition-calculator-tile.avif" alt="sprite glass">
+                <span class="topic">Sprite</span>
+                <span class="price">Rs. 300.00</span>
+            </div>
+            <div class="option">
+                <img src="images/pizzamenu/DC_202212_1262_MediumFantaOrange_Glass_1564x1564-1_nutrition-calculator-tile.avif" alt="fanta glass">
+                <span class="topic">Fanta</span>
+                <span class="price">Rs. 300.00</span>
+            </div>
+            <div class="option">
+                <img src="images/pizzamenu/DC_201905_0421_MediumDrPepper_Glass_1564x1564-1_nutrition-calculator-tile.avif" alt="Dr pepper glass">
+                <span class="topic">Dr Pepper </span>
+                <span class="price">Rs. 300.00</span>
+            </div>
+            <div class="option">
+                <img src="images/pizzamenu/DC_202301_7959_MediumFrozenFantaBlueRaspberry_Glass_1564x1564-1_nutrition-calculator-tile.avif" alt="frozen blueberry">
+                <span class="topic">Frozen Blueberry Fanta</span>
+                <span class="price">Rs. 500.00</span>
+            </div>
+            <div class="option">
+                <img src="images/pizzamenu/DC_202301_7963_MediumFrozenCocaColaClassic_Glass_1564x1564-1_nutrition-calculator-tile.avif" alt="frozen coca cola">
+                <span class="topic">Frozen Coca Cola </span>
+                <span class="price">Rs. 500.00</span>
+            </div>
+             <div class="option">
+                <img src="images/pizzamenu/DC_202402_5474_DasaniBottledWater_1564x1564-1_nutrition-calculator-tile.avif" alt="water glass">
+                <span class="topic">Water Bottle </span>
+                <span class="price">Rs. 100.00</span>
+            </div>
+        </div>
+     </section>
+    <!-- Section 6 : Desserts Section -->
+    <section class="dessertsSection" id="dessertsSection">
+        <div class="title">
+            <span class="sideLine"></span>
+            <span>Desserts</span>
+            <span class="sideLine"></span>
+        </div>
+        <div class="area">
+            <div class="option">
+                <img src="images/pizzamenu/DC_202106_0336_LargeVanillaCone_1564x1564-1_nutrition-calculator-tile.avif" alt="Vanilla ice cream">
+                <span class="topic">Vanilla Cone</span>
+                <span class="price">Rs. 200.00</span>
+            </div>
+            <div class="option">
+                <img src="images/pizzamenu/DC_201907_0337_HotFudgeSundae_1564x1564-1_nutrition-calculator-tile.avif" alt="Chocolate Sundae">
+                <span class="topic">Chocolate Sundae</span>
+                <span class="price">Rs. 350.00</span>
+            </div>
+            <div class="option">
+                <img src="images/pizzamenu/DC_201907_0345_CaramelSundae_1564x1564-1_nutrition-calculator-tile.avif" alt="Caramel Sundae">
+                <span class="topic">Caramel Sundae</span>
+                <span class="price">Rs. 350.00</span>
+            </div>
+            <div class="option">
+                <img src="images/pizzamenu/DC_202004_0706_BakedApplePie_Broken_1564x1564-1_nutrition-calculator-tile.avif" alt="Apple Pie">
+                <span class="topic">Baked Apple Pie</span>
+                <span class="price">Rs. 300.00</span>
+            </div>
+            <div class="option">
+                <img src="images/pizzamenu/DC_202211_1852_ChocolateChipCookie_Upright_1564x1564-1_nutrition-calculator-tile.avif" alt="Cookie">
+                <span class="topic">Chocolate Cookie</span>
+                <span class="price">Rs. 100.00</span>
+            </div>
+        </div>
+     </section>
+
+    <footer>
+        <div class="wrapper">
+            <div class="footerArea">
+                <div class="linksFooter">
+                    <div class="titleFooter">
+                        <i class="fa-solid fa-link"></i>
+                        <span class="linkTitle">Links</span>
+                    </div>
+                    <div class="linksList">
+                        <a href="Home.html">Home</a>
+                        <a href="#top">Menu</a>
+                        <a href="Home.html#contactUs">Contact</a>
+                        <a href="Home.html#aboutUs">About Us</a>
+                    </div>
+                </div>
+                <div class="address">
+                    <div class="titleFooter">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span class="address">Address</span>
+                    </div>
+                    <div class="details">
+                        <span>33, Galle Rd, <br>Colombo 03, Sri Lanka.</span>
+                        <span>21, Colombo St, <br>Kandy, Sri Lanka.</span>
+                    </div>
+                </div>
+                <div class="callUs">
+                    <div class="titleFooter">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <span class="telephone">Call Us</span>
+                    </div>
+                    <span class="details">+94 71095446#</span>
+                </div>
+                <div class="openingHours">
+                    <div class="titleFooter">
+                        <i class="fa-solid fa-clock"></i>
+                        <span class="time">Openning Hours</span>
+                    </div>
+                    <div class="details">
+                        <span>Weekdays : 09:00 - 22:00</span>
+                        <span>Weekend : 09:00 - 24:00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyRight">
+                <span>@2025 Momma's Pizzeria; All rights reserved | Web Design by Thinal Prabasha</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="Menu.js"></script>
+</body>
+</html>

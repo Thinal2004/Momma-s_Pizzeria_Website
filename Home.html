@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Momma's Pizzeria</title>
+    <link rel="shortcut icon" type="x-icon" href="images/logoAddressBar.png"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bentham&family=Cardo:ital,wght@0,400;0,700;1,400&family=Cutive+Mono&family=Dancing+Script:wght@400..700&family=Instrument+Serif:ital@0;1&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+    <header>
+        <div id="sidebar">
+            <div class="links">
+                <a onclick=closeSidebar()><i class="fa-solid fa-xmark"></i></a>
+                <a href="#">Home</a>
+                <a href="Menu.html">Menu</a>
+                <a href="#aboutUs">About Us</a>
+                <a href="#contactUs">Contact</a>
+                
+            </div>        
+        </div>
+
+        <div id="navigation">
+            <img src="images/logonew.png" alt="logo" id="logo">
+            <div class="links">
+                <a href="#" class="hideOnMobile">Home</a>
+                <a href="Menu.html" class="hideOnMobile">Menu</a>
+                <a href="#aboutUs" class="hideOnMobile">About Us</a>
+                <a href="#contactUs" class="hideOnMobile">Contact</a>
+                
+                <a class="menu" onclick=showSidebar()><i class="fa-solid fa-bars" ></i></a>
+            </div>        
+        </div>
+        
+    </header>
+
+    <!--section 1 - Cover Image-->
+    <section class="section1">
+        <div class="cover"></div>
+        <div class="centered">
+            <img src="images/Lovepik_com-380428579-3d-pizza-and-plate-modeling-tomato-tomatoes-yellow.png" alt="Pizza">
+        </div> 
+        <div class="slogan">
+            <span>Good to the last slice</span>
+            <div class="menuBtn"><p><a href="Menu.html">VIEW MENU</a></p></i></div>
+        </div>
+    </section>
+    
+    
+    <!-- section 2 - About US -->
+    <div class="aboutUs" id="aboutUs">
+        <div class="line">
+            <img src="images/vertical-line.png" alt="vertical line">
+        </div>
+        <img src="images/194c0fa12bbf25a8864e3d09ad9729b8.png" alt="top-line" class="topLine">
+        <div class="description">
+            <span>Since 1985</span>
+            <span>Inspired by the timeless love for pizza, we’re a pizzeria that celebrates bold flavors, fresh ingredients, and warm, welcoming service — one slice at a time!</span> 
+        </div>
+        <div class="line"><img src="images/vertical-line.png" alt="vertical line"></div>
+    </div>
+
+    <div class="aboutAndVision">
+        <div class="about">
+            <p id="aboutTag">About Us</p>
+            <p>At Momma’s Pizzeria, we speak the language of love, laughter, and really good pizza. Inspired by the heart of Italy and served with the soul of Sri Lanka, our kitchen brings you the best of both worlds-traditional recipes, handcrafted dough, rich sauces, and the warmth of momma’s touch.</p>
+            <p> Every bite is a tribute to old-world Italian charm, blended with the island’s flair for hospitality and spice. Whether you're here for a quick slice or a family feast, you're not just a customer-you’re part of the Momma’s family. Come hungry, leave happy</p>
+        </div>
+    </div>
+
+    <!-- section 3 - Top Background images -->
+     <section class="topBackgroundImages">
+        <img src="images/bgimage6.png" alt="background image pizza" id="image1">
+        <img src="images/Untitled design.png" alt="background image pizza" id="image2">
+     </section>
+    
+     
+    <!-- section 4 - What We Sell -->
+     <section class="whatWeSell">
+
+        <div class="sectionTitle">
+            <span class="sideBar"></span>
+            <span>What We Sell</span>
+            <span class="sideBar"></span>
+        </div>
+
+        <div class="categories">
+            <div class="categoryTitle">
+                <span>Pizza</span>
+                <img src="images/side-view-pizza-with-chopped-pepper-board-cookware.jpg" alt="pizza menu">
+                <p>Freshly baked with premium ingredients, our pizzas are crafted to satisfy every craving-from classic Margheritas to loaded meat lovers.</p>
+            </div>
+            <div class="categoryTitle">
+                <span>Burgers</span>
+                <img src="images/pexels-enginakyurt-3219483.jpg" alt="burgers menu">
+                <p>Juicy, grilled to perfection, and stacked with flavor-our burgers are made with 100% quality meat and served with your choice of toppings.</p>
+            </div>
+            <div class="categoryTitle">
+                <span>Drinks</span>
+                <img src="images/vecteezy_ai-generated-refreshing-cocktail-with-mint-leaf-and_36210509.jpg" alt="drinks menu">
+                <p>From ice-cold sodas to refreshing juices, we’ve got the perfect drink to complement your meal.</p>
+            </div>
+            
+            <div class="categoryTitle">
+                <span>Desserts</span>
+                <img src="images/kobby-mendez-idTwDKt2j2o-unsplash.jpg" alt="desserts menu">
+                <p>End your meal on a sweet note with our selection of decadent desserts. Don't miss our brand-new sundaes!</p>
+            </div>
+        </div>
+
+     </section>
+    <!-- section 5 - contact Us -->
+     <section class="contactSection" id="contactUs">
+        <div class="contactTitle">
+            <span class="sideBar"></span>
+            <span>Contact Us</span>
+            <span class="sideBar"></span>
+            
+        </div>
+        <div class="formArea">
+            <form id="contactForm">
+                <div class="name">
+                    <input type="text" placeholder="Name" id="name">
+                    <span id="nameFeedback"></span>
+                </div>
+                <div class="email">
+                    <input type="text" placeholder="Email" id="email">
+                    <span id="emailFeedback"></span>
+                </div>
+                <div class="telephone">
+                    <input type="text" placeholder="Phone Number (+94 xxxxxxxxx)" id="telephone">
+                    <span id="numberFeedback"></span>
+                </div>
+                <div class="message">
+                    <input type="text" placeholder="Message" id="message">
+                    <span id="messageFeedback"></span>
+                </div>
+                <input type="submit" class="button" id="button" value="Send">
+            </form>
+        </div>
+     </section>
+
+    <!-- section 6 - Bottom Background images -->
+    <section class="bottomBackgroundImages">
+        <img src="images/bgimage5.png" alt="background image pizza" id="image3">
+    </section>
+
+    <footer>
+        <div class="wrapper">
+            <div class="footerArea">
+                <div class="links">
+                    <div class="title">
+                        <i class="fa-solid fa-link"></i>
+                        <span class="linkTitle">Links</span>
+                    </div>
+                    <div class="linksList">
+                        <a href="#top">Home</a>
+                        <a href="Menu.html">Menu</a>
+                        <a href="#contactUs">Contact</a>
+                        <a href="#aboutUs">About Us</a>
+                    </div>
+                </div>
+                <div class="address">
+                    <div class="title">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span class="address">Address</span>
+                    </div>
+                    <div class="details">
+                        <span>33, Galle Rd, <br>Colombo 03, Sri Lanka.</span>
+                        <span>21, Colombo St, <br>Kandy, Sri Lanka.</span>
+                    </div>
+                </div>
+                <div class="callUs">
+                    <div class="title">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <span class="telephone">Call Us</span>
+                    </div>
+                    <span class="details">+94 71095446#</span>
+                </div>
+                <div class="openingHours">
+                    <div class="title">
+                        <i class="fa-solid fa-clock"></i>
+                        <span class="time">Openning Hours</span>
+                    </div>
+                    <div class="details">
+                        <span>Weekdays : 09:00 - 22:00</span>
+                        <span>Weekend : 09:00 - 24:00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyRight">
+                <span>@2025 Momma's Pizzeria; All rights reserved | Web Design by Thinal Prabasha</span>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="Home.js"></script>
+</body>
+</html>
