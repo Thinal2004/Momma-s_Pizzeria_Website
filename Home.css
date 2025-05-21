@@ -743,3 +743,37 @@ body,html{
     }
 }
 
+
+@media(max-height:440px){
+    /* Navigation Bar */
+    #navigation{
+        height: 60px;   
+    }
+
+    #navigation #logo{
+        height: 150px;
+        top: -15px;
+    }
+
+    /* Section 1 : Cover Image */
+    
+    .slogan{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 5%;
+    }
+
+    .slogan span{
+        font-size: 70px;
+        margin-bottom: 10px;
+    }
+
+    .centered img{
+        height: 200px;
+    }
+
+    .slogan{
+        align-items: flex-start;
+    }
+}

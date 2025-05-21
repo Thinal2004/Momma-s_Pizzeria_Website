@@ -99,8 +99,7 @@ body,html{
 .menuBackground{
     background-image: url(images/pizzamenu/—Pngtree—food\ menu\ fare\ meal\ background_869492.jpg);
     height: 40vh;
-    position: relative;
-    
+    position: relative; 
 }
 
 .menuBackground .menuTitle{
@@ -416,5 +415,22 @@ body,html{
     .wrapper .footerArea{
         display: grid;
         grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-height:440px){
+    /* Navigation Bar */
+    #navigation{
+        height: 60px;   
+    }
+
+    #navigation #logo{
+        height: 150px;
+        top: -15px;
+    }
+
+    /* Section 1 : Menu Background */
+    .menuBackground{
+        height: 60vh;
     }
 }
